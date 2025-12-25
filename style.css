@@ -237,6 +237,7 @@ html {
     border-radius: 20px;
     box-shadow: 0 8px 32px rgba(0,0,0,0.1);
     backdrop-filter: blur(10px);
+    animation: sectionPulse 4s ease-in-out infinite;
 }
 
 .scroll-section:nth-child(even) {
@@ -267,6 +268,11 @@ html {
     to { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes fadeOut {
+    from { opacity: 1; transform: scale(1); }
+    to { opacity: 0; transform: scale(0.9); }
+}
+
 @keyframes slideInUp {
     from {
         opacity: 0;
@@ -278,11 +284,76 @@ html {
     }
 }
 
+@keyframes heartFloat {
+    0%, 100% {
+        transform: translateY(0px) translateX(0px) rotate(0deg) scale(1);
+        opacity: 0.8;
+    }
+    25% {
+        transform: translateY(-30px) translateX(15px) rotate(10deg) scale(1.1);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-15px) translateX(-10px) rotate(-5deg) scale(0.9);
+        opacity: 0.9;
+    }
+    75% {
+        transform: translateY(-45px) translateX(5px) rotate(15deg) scale(1.2);
+        opacity: 0.7;
+    }
+}
+
+@keyframes loveParticleFloat {
+    0%, 100% {
+        transform: translateY(0px) translateX(0px) rotate(0deg) scale(1);
+        opacity: 0.3;
+    }
+    25% {
+        transform: translateY(-25px) translateX(20px) rotate(90deg) scale(1.3);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translateY(-10px) translateX(-15px) rotate(180deg) scale(0.8);
+        opacity: 0.6;
+    }
+    75% {
+        transform: translateY(-35px) translateX(10px) rotate(270deg) scale(1.1);
+        opacity: 0.9;
+    }
+}
+
+@keyframes sectionPulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    }
+    50% {
+        transform: scale(1.02);
+        box-shadow: 0 12px 40px rgba(255,105,180,0.2);
+    }
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+}
+
 .love-counter {
     font-size: 2.5em;
     color: #ff1493;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    animation: heartbeat 2s ease-in-out infinite;
 }
 
 .memory-grid {
@@ -434,6 +505,166 @@ footer::after {
     opacity: 0.7;
 }
 
+.teddy-bear:nth-child(5) {
+    animation: teddyFloat 16s ease-in-out infinite reverse;
+    font-size: 2.2em;
+    opacity: 0.8;
+    top: 15%;
+    left: 85%;
+}
+
+.teddy-bear:nth-child(6) {
+    animation: teddyFloat2 28s ease-in-out infinite;
+    font-size: 3.8em;
+    opacity: 0.6;
+    top: 75%;
+    left: 8%;
+}
+
+.teddy-bear:nth-child(7) {
+    animation: teddyFloat3 14s ease-in-out infinite reverse;
+    font-size: 1.8em;
+    opacity: 0.9;
+    top: 35%;
+    left: 92%;
+}
+
+.teddy-bear:nth-child(8) {
+    animation: teddyFloat4 24s ease-in-out infinite;
+    font-size: 4.2em;
+    opacity: 0.5;
+    top: 55%;
+    left: 3%;
+}
+
+.teddy-bear:nth-child(9) {
+    animation: teddyFloat 19s ease-in-out infinite reverse;
+    font-size: 2.7em;
+    opacity: 0.7;
+    top: 25%;
+    left: 78%;
+}
+
+.teddy-bear:nth-child(10) {
+    animation: teddyFloat2 21s ease-in-out infinite;
+    font-size: 1.9em;
+    opacity: 0.8;
+    top: 85%;
+    left: 15%;
+}
+
+.teddy-bear:nth-child(11) {
+    animation: teddyFloat3 17s ease-in-out infinite reverse;
+    font-size: 3.3em;
+    opacity: 0.6;
+    top: 45%;
+    left: 88%;
+}
+
+.teddy-bear:nth-child(12) {
+    animation: teddyFloat4 26s ease-in-out infinite;
+    font-size: 2.4em;
+    opacity: 0.9;
+    top: 65%;
+    left: 7%;
+}
+
+.teddy-bear:nth-child(13) {
+    animation: teddyFloat 23s ease-in-out infinite reverse;
+    font-size: 1.6em;
+    opacity: 0.7;
+    top: 20%;
+    left: 82%;
+}
+
+.teddy-bear:nth-child(14) {
+    animation: teddyFloat2 15s ease-in-out infinite;
+    font-size: 4.5em;
+    opacity: 0.5;
+    top: 80%;
+    left: 12%;
+}
+
+.teddy-bear:nth-child(15) {
+    animation: teddyFloat3 20s ease-in-out infinite reverse;
+    font-size: 2.1em;
+    opacity: 0.8;
+    top: 30%;
+    left: 95%;
+}
+
+.teddy-bear:nth-child(16) {
+    animation: teddyFloat4 18s ease-in-out infinite;
+    font-size: 3.6em;
+    opacity: 0.6;
+    top: 50%;
+    left: 5%;
+}
+
+.teddy-bear:nth-child(17) {
+    animation: teddyFloat 27s ease-in-out infinite reverse;
+    font-size: 1.4em;
+    opacity: 0.9;
+    top: 40%;
+    left: 90%;
+}
+
+.teddy-bear:nth-child(18) {
+    animation: teddyFloat2 22s ease-in-out infinite;
+    font-size: 4.8em;
+    opacity: 0.4;
+    top: 70%;
+    left: 18%;
+}
+
+.teddy-bear:nth-child(19) {
+    animation: teddyFloat3 16s ease-in-out infinite reverse;
+    font-size: 2.3em;
+    opacity: 0.7;
+    top: 10%;
+    left: 75%;
+}
+
+.teddy-bear:nth-child(20) {
+    animation: teddyFloat4 29s ease-in-out infinite;
+    font-size: 3.1em;
+    opacity: 0.8;
+    top: 90%;
+    left: 22%;
+}
+
+.small-teddy {
+    font-size: 2em !important;
+    animation: teddyFloat 15s ease-in-out infinite reverse !important;
+}
+
+.medium-teddy {
+    font-size: 2.8em !important;
+    animation: teddyFloat2 20s ease-in-out infinite !important;
+}
+
+.large-teddy {
+    font-size: 4em !important;
+    animation: teddyFloat3 25s ease-in-out infinite !important;
+}
+
+.tiny-teddy {
+    font-size: 1.5em !important;
+    animation: teddyFloat4 18s ease-in-out infinite reverse !important;
+}
+
+.huge-teddy {
+    font-size: 5em !important;
+    animation: teddyFloat 30s ease-in-out infinite !important;
+    opacity: 0.9;
+}
+
+.mini-teddy {
+    font-size: 1.2em !important;
+    animation: teddyFloat2 12s ease-in-out infinite reverse !important;
+    opacity: 0.5;
+}
+
 @keyframes teddyFloat {
     0% { top: 10%; left: -5%; transform: rotate(0deg) scale(1); }
     25% { top: 20%; left: 20%; transform: rotate(10deg) scale(1.1); }
@@ -487,6 +718,39 @@ footer::after {
 .floating-heart:nth-child(3) { animation-delay: 6s; left: 50%; }
 .floating-heart:nth-child(4) { animation-delay: 9s; left: 70%; }
 .floating-heart:nth-child(5) { animation-delay: 12s; left: 90%; }
+.floating-heart:nth-child(6) { animation-delay: 2s; left: 20%; }
+.floating-heart:nth-child(7) { animation-delay: 5s; left: 40%; }
+.floating-heart:nth-child(8) { animation-delay: 8s; left: 60%; }
+.floating-heart:nth-child(9) { animation-delay: 11s; left: 80%; }
+.floating-heart:nth-child(10) { animation-delay: 14s; left: 15%; }
+
+.love-particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 999;
+}
+
+.love-particle {
+    position: absolute;
+    font-size: 1.5em;
+    animation: loveParticleFloat 12s ease-in-out infinite;
+    opacity: 0.7;
+}
+
+.love-particle:nth-child(1) { animation-delay: 0s; top: 20%; left: 15%; }
+.love-particle:nth-child(2) { animation-delay: 1.5s; top: 40%; right: 25%; }
+.love-particle:nth-child(3) { animation-delay: 3s; top: 60%; left: 35%; }
+.love-particle:nth-child(4) { animation-delay: 4.5s; top: 80%; right: 45%; }
+.love-particle:nth-child(5) { animation-delay: 6s; top: 30%; left: 55%; }
+.love-particle:nth-child(6) { animation-delay: 7.5s; top: 50%; right: 65%; }
+.love-particle:nth-child(7) { animation-delay: 9s; top: 70%; left: 75%; }
+.love-particle:nth-child(8) { animation-delay: 10.5s; top: 25%; right: 85%; }
+.love-particle:nth-child(9) { animation-delay: 2s; top: 45%; left: 5%; }
+.love-particle:nth-child(10) { animation-delay: 5s; top: 65%; right: 95%; }
 
 .background-elements {
     position: fixed;
@@ -528,6 +792,17 @@ footer::after {
 .bg-element:nth-child(22) { top: 65%; left: 85%; animation-delay: 23s; }
 .bg-element:nth-child(23) { top: 35%; right: 35%; animation-delay: 25s; }
 .bg-element:nth-child(24) { top: 75%; left: 45%; animation-delay: 27s; }
+.bg-element:nth-child(25) { top: 15%; right: 55%; animation-delay: 29s; }
+.bg-element:nth-child(26) { top: 55%; left: 25%; animation-delay: 31s; }
+.bg-element:nth-child(27) { top: 85%; right: 65%; animation-delay: 33s; }
+.bg-element:nth-child(28) { top: 5%; left: 35%; animation-delay: 35s; }
+.bg-element:nth-child(29) { top: 75%; right: 15%; animation-delay: 37s; }
+.bg-element:nth-child(30) { top: 25%; left: 95%; animation-delay: 39s; }
+.bg-element:nth-child(31) { top: 65%; right: 5%; animation-delay: 41s; }
+.bg-element:nth-child(32) { top: 35%; left: 55%; animation-delay: 43s; }
+.bg-element:nth-child(33) { top: 95%; right: 75%; animation-delay: 45s; }
+.bg-element:nth-child(34) { top: 45%; left: 15%; animation-delay: 47s; }
+.bg-element:nth-child(35) { top: 15%; right: 35%; animation-delay: 49s; }
 
 @keyframes bgFloat {
     0%, 100% {
@@ -641,4 +916,124 @@ body {
 @keyframes sparkle {
     0%, 100% { opacity: 0; transform: scale(0.5) rotate(0deg); }
     50% { opacity: 1; transform: scale(1) rotate(180deg); }
+}
+
+/* Kiss Popup Styles */
+.kiss-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.kiss-popup-content {
+    background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(255,182,193,0.1));
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 500px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    border: 3px solid #ff69b4;
+    animation: popupBounce 0.6s ease-out;
+}
+
+@keyframes popupBounce {
+    0% { transform: scale(0.3) rotate(-10deg); opacity: 0; }
+    50% { transform: scale(1.05) rotate(2deg); }
+    100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+.kiss-animation {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.big-kiss {
+    font-size: 5em;
+    display: block;
+    animation: kissPulse 1s ease-in-out infinite;
+    margin-bottom: 10px;
+}
+
+@keyframes kissPulse {
+    0%, 100% { transform: scale(1) rotate(0deg); }
+    25% { transform: scale(1.1) rotate(-5deg); }
+    50% { transform: scale(1.2) rotate(0deg); }
+    75% { transform: scale(1.1) rotate(5deg); }
+}
+
+.heart-kiss {
+    font-size: 2em;
+    position: absolute;
+    animation: heartFloatKiss 2s ease-in-out infinite;
+}
+
+.heart-kiss:nth-child(2) {
+    top: -20px;
+    left: 20px;
+    animation-delay: 0.3s;
+}
+
+.heart-kiss:nth-child(3) {
+    top: -10px;
+    right: 20px;
+    animation-delay: 0.6s;
+}
+
+.heart-kiss:nth-child(4) {
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-delay: 0.9s;
+}
+
+@keyframes heartFloatKiss {
+    0%, 100% { transform: translateY(0px) scale(1); opacity: 0.8; }
+    50% { transform: translateY(-15px) scale(1.2); opacity: 1; }
+}
+
+.kiss-title {
+    color: #ff1493;
+    font-size: 2.5em;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    animation: rainbowText 2s ease-in-out infinite;
+}
+
+.kiss-message {
+    font-size: 1.3em;
+    color: #ff69b4;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.close-kiss-btn {
+    background: linear-gradient(45deg, #ff69b4, #ff1493);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255,105,180,0.3);
+}
+
+.close-kiss-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(255,105,180,0.4);
+}
+
+.close-kiss-btn:active {
+    transform: scale(0.95);
 }
