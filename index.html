@@ -37,22 +37,25 @@
         </div>
         <p>You make me smile when I least expect it, laugh when I need it most, and love deeper than I ever thought possible.</p>
         <p>Thank you for being you – my everything, my always, my love.</p>
-        <p>In your eyes, I see my future. In your smile, I find my happiness. In your love, I discover my purpose.</p>
-        <p>You are the melody to my song, the colors to my painting, the words to my story. Without you, my world would be incomplete.</p>
-        <p>Every day with you is a new adventure, a new memory to cherish, a new reason to love life.</p>
-        <button onclick="showLoveMessage()" class="quiz" style="font-size: 1.5em; padding: 20px 40px;">Click for a Special Message 💌</button>
+        <button onclick="showLoveMessage(); createConfetti(); createSparkle();" class="quiz" style="font-size: 1.5em; padding: 20px 40px;">Click for a Special Message 💌</button>
         <p id="special-message" style="margin-top: 20px; font-style: italic; color: #ff1493; font-size: 1.2em;"></p>
+        <div style="margin-top: 30px;">
+            <p style="font-size: 1.3em; color: #ff69b4;">💖 You are the light of my life 💖</p>
+            <p style="font-size: 1.3em; color: #ff1493;">💕 My heart beats only for you 💕</p>
+            <p style="font-size: 1.3em; color: #ffb6c1;">💗 Forever and always yours 💗</p>
+        </div>
     </section>
 
     <section id="home" class="scroll-section">
         <h2>🌟 Welcome to Our Love Hub 🌟</h2>
         <p>Hi my love! <span class="heart">❤️</span> This is your personal space filled with affection. Scroll down to explore more.</p>
         <p>Love Counter: <span id="love-count" class="love-counter">0</span> (Click to increase!)</p>
-        <button onclick="increaseLove()" class="quiz">I Love You More! 💕</button>
-        <p>This website is a testament to our beautiful journey together. Every pixel, every animation, every word is crafted with love just for you.</p>
-        <p>Explore the sections below to discover messages of love, cherished memories, relaxation spaces, fun games, and our favorite music playlist.</p>
-        <p>Each moment we share becomes a precious memory, each laugh a melody, each touch a poem. You are my greatest adventure and my sweetest home.</p>
-        <p>Thank you for being the light in my life, the warmth in my heart, and the love that makes everything worthwhile.</p>
+        <button onclick="increaseLove(); createConfetti(); createSparkle();" class="quiz">I Love You More! 💕</button>
+        <div style="margin-top: 30px; text-align: center;">
+            <p style="font-size: 1.4em; color: #ff69b4; animation: rainbowText 3s ease-in-out infinite;">💖 Every moment with you is a treasure 💖</p>
+            <p style="font-size: 1.2em; color: #ff1493;">💕 Your smile lights up my world 💕</p>
+            <p style="font-size: 1.2em; color: #ffb6c1;">💗 You are my everything 💗</p>
+        </div>
     </section>
 
     <section id="love-notes" class="scroll-section">
@@ -63,16 +66,16 @@
             <li>😄 I love how you laugh at my silly jokes.</li>
             <li>💑 You're my everything, my forever.</li>
             <li>💪 Even on tough days, you make me stronger.</li>
-            <li>🌙 Your eyes sparkle brighter than the stars.</li>
-            <li>🎵 Your voice is my favorite melody.</li>
-            <li>🌸 Your presence makes ordinary moments extraordinary.</li>
-            <li>💝 Your love is my greatest gift.</li>
+            <li>💖 Your eyes sparkle like stars in the night sky.</li>
+            <li>💕 I fall in love with you more every single day.</li>
+            <li>💗 Your touch sends electricity through my soul.</li>
+            <li>💘 You are the most beautiful person I know.</li>
         </ul>
-        <p>Add your own note: <input type="text" id="new-note" placeholder="Write something sweet..." aria-label="Add a love note"> <button onclick="addNote()" class="quiz">Add 💖</button></p>
+        <p>Add your own note: <input type="text" id="new-note" placeholder="Write something sweet..." aria-label="Add a love note"> <button onclick="addNote(); createConfetti(); createSparkle();" class="quiz">Add 💖</button></p>
         <ul id="notes-list"></ul>
-        <p>These notes are just a small way to express the depth of my feelings for you. Words can never fully capture how much you mean to me.</p>
-        <p>Your kindness, your warmth, your beautiful soul - they inspire me every single day to be a better person.</p>
-        <p>I cherish every conversation, every shared silence, every moment that we create together.</p>
+        <div style="margin-top: 30px; text-align: center;">
+            <p style="font-size: 1.3em; color: #ff69b4;">💖 Every note reminds me of our beautiful love story 💖</p>
+        </div>
     </section>
 
     <section id="memories" class="scroll-section">
@@ -91,22 +94,25 @@
                 <p>gusse wale photoo🍳</p>
             </div>
         </div>
-        <p>Aww sabh mai kitni pyaari dik rahi hai 📷</p>        <p>Each photo captures a moment of joy, a shared laugh, a tender glance. These images are more than pictures - they are memories of our beautiful journey together.</p>
-        <p>From the first time we met to every adventure we've shared, these photos remind me of how lucky I am to have you in my life.</p>
-        <p>Your smile in these photos lights up my world, your eyes tell stories of love and happiness, your presence makes every moment magical.</p>
-        <p>I look at these photos and see not just images, but pieces of our shared history, our growing love, our beautiful future together.</p>    </section>
+        <p>Aww sabh mai kitni pyaari dik rahi hai 📷</p>
+        <div style="margin-top: 30px; text-align: center;">
+            <p style="font-size: 1.3em; color: #ff69b4;">💖 Every photo captures a piece of our love 💖</p>
+            <p style="font-size: 1.2em; color: #ff1493;">💕 Your beauty takes my breath away 💕</p>
+            <p style="font-size: 1.2em; color: #ffb6c1;">💗 These memories are forever in my heart 💗</p>
+        </div>
+    </section>
 
     <section id="relaxation" class="scroll-section">
         <h2>🧘 Cutieeeeeee🧘</h2>
         <p>Ye hai meri samiksha cutiii</p>
         <img src="img3.jpeg" alt="Calming nature scene" style="max-width:100%; border-radius: 15px;">
         <p>I love you soooo much everything i see muje teri yaad aathi hai ✨.</p>
-        <button onclick="feelLove()" class="quiz">Feel the Love 💕</button>
-        <p>This space is dedicated to you, my love. Take a moment to breathe, relax, and remember how much you are cherished.</p>
-        <p>Life can be hectic, but knowing you are in my world makes everything peaceful and beautiful.</p>
-        <p>Your smile is my favorite view, your laughter my favorite sound, your love my favorite feeling.</p>
-        <p>In this busy world, you are my calm, my peace, my everything. Thank you for being my safe harbor.</p>
-        <p>Whenever you need to unwind, remember that my love for you is constant, unwavering, and infinite.</p>
+        <button onclick="feelLove(); createConfetti(); createSparkle();" class="quiz">Feel the Love 💕</button>
+        <div style="margin-top: 30px; text-align: center;">
+            <p style="font-size: 1.3em; color: #ff69b4;">💖 You are my peace, my calm, my everything 💖</p>
+            <p style="font-size: 1.2em; color: #ff1493;">💕 Every breath I take reminds me of you 💕</p>
+            <p style="font-size: 1.2em; color: #ffb6c1;">💗 Your love relaxes my soul 💗</p>
+        </div>
     </section>
 
     <section id="fun" class="scroll-section">
@@ -114,17 +120,17 @@
         <div class="quiz">
             <h3>Quick Love Quiz: How Well Do I Know You? 💡</h3>
             <p>What’s your favorite color?</p>
-            <button onclick="checkAnswer('blue')">Blue</button>
-            <button onclick="checkAnswer('pink')">Pink</button>
-            <button onclick="checkAnswer('green')">Green</button>
+            <button onclick="checkAnswer('blue'); createConfetti(); createSparkle();">Blue</button>
+            <button onclick="checkAnswer('pink'); createConfetti(); createSparkle();">Pink</button>
+            <button onclick="checkAnswer('green'); createConfetti(); createSparkle();">Green</button>
             <p>You remember you wanted to see me wear pink✨.</p>
             <p id="quiz-result"></p>
         </div>
-        <p>Games and quizzes are fun, but the real game is how much I love you - and I win every time! 🎉</p>
-        <p>Every correct answer reminds me of how well we know each other, how deeply we understand one another.</p>
-        <p>Your favorite things, your little quirks, your beautiful personality - I treasure them all.</p>
-        <p>This quiz is just a playful way to celebrate our connection, our intimacy, our beautiful bond.</p>
-        <p>No matter the score, my love for you is always 100%, always perfect, always true.</p>
+        <div style="margin-top: 30px; text-align: center;">
+            <p style="font-size: 1.3em; color: #ff69b4;">💖 Every game we play reminds me of our fun times 💖</p>
+            <p style="font-size: 1.2em; color: #ff1493;">💕 Your laughter is my favorite melody 💕</p>
+            <p style="font-size: 1.2em; color: #ffb6c1;">💗 Let's create more beautiful memories together 💗</p>
+        </div>
     </section>
 
     <section id="playlist" class="scroll-section">
@@ -135,24 +141,76 @@
             <li>🎶 For a reason</li>
             <li>🎶 "Thinking Out Loud"</li>
             <li>🎶 Kaashish</li>
+            <li>🎶 "Perfect" by Ed Sheeran</li>
+            <li>🎶 "All of Me" by John Legend</li>
+            <li>🎶 "At Last" by Etta James</li>
+            <li>🎶 "Unchained Melody"</li>
         </ul>
-        <p>These songs capture the essence of our love story - romantic, beautiful, timeless.</p>
-        <p>Music has a way of expressing what words sometimes cannot. These melodies remind me of you.</p>
-        <p>Every lyric, every note, every harmony speaks of love, just like our story.</p>
-        <p>When I hear these songs, I think of your smile, your eyes, your beautiful soul.</p>
-        <p>Our love is like the perfect song - harmonious, beautiful, and never-ending.</p>
+        <div style="margin-top: 30px; text-align: center;">
+            <p style="font-size: 1.3em; color: #ff69b4;">💖 Every song reminds me of our love story 💖</p>
+            <p style="font-size: 1.2em; color: #ff1493;">💕 Your voice is my favorite music 💕</p>
+            <p style="font-size: 1.2em; color: #ffb6c1;">💗 Let's dance to the rhythm of our hearts 💗</p>
+        </div>
     </section>
+
+    <!-- Kiss Popup Modal -->
+    <div id="kiss-popup" class="kiss-popup-overlay">
+        <div class="kiss-popup-content">
+            <div class="kiss-animation">
+                <span class="big-kiss">💋</span>
+                <span class="heart-kiss">💖</span>
+                <span class="heart-kiss">💕</span>
+                <span class="heart-kiss">❤️</span>
+            </div>
+            <h2 class="kiss-title">A Big Kiss for You! 💋</h2>
+            <p class="kiss-message">You've reached the end of our love journey! Here's a big virtual kiss to show how much I love you! 😘</p>
+            <button onclick="closeKissPopup()" class="close-kiss-btn">Close 💕</button>
+        </div>
+    </div>
 
     <div class="teddy-bear">🧸</div>
     <div class="teddy-bear small-teddy">🧸</div>
     <div class="teddy-bear tiny-teddy">🧸</div>
     <div class="teddy-bear">🧸</div>
+    <div class="teddy-bear medium-teddy">🧸</div>
+    <div class="teddy-bear large-teddy">🧸</div>
+    <div class="teddy-bear small-teddy">🧸</div>
+    <div class="teddy-bear tiny-teddy">🧸</div>
+    <div class="teddy-bear huge-teddy">🧸</div>
+    <div class="teddy-bear mini-teddy">🧸</div>
+    <div class="teddy-bear medium-teddy">🧸</div>
+    <div class="teddy-bear small-teddy">🧸</div>
+    <div class="teddy-bear tiny-teddy">🧸</div>
+    <div class="teddy-bear large-teddy">🧸</div>
+    <div class="teddy-bear">🧸</div>
+    <div class="teddy-bear mini-teddy">🧸</div>
+    <div class="teddy-bear huge-teddy">🧸</div>
+    <div class="teddy-bear small-teddy">🧸</div>
+    <div class="teddy-bear medium-teddy">🧸</div>
+    <div class="teddy-bear tiny-teddy">🧸</div>
     <div class="floating-hearts">
         <span class="floating-heart">💖</span>
         <span class="floating-heart">💕</span>
         <span class="floating-heart">❤️</span>
         <span class="floating-heart">💓</span>
         <span class="floating-heart">💗</span>
+        <span class="floating-heart">💘</span>
+        <span class="floating-heart">💝</span>
+        <span class="floating-heart">💞</span>
+        <span class="floating-heart">💟</span>
+        <span class="floating-heart">😍</span>
+    </div>
+    <div class="love-particles">
+        <div class="love-particle">💕</div>
+        <div class="love-particle">❤️</div>
+        <div class="love-particle">💖</div>
+        <div class="love-particle">💓</div>
+        <div class="love-particle">💗</div>
+        <div class="love-particle">🌹</div>
+        <div class="love-particle">🌸</div>
+        <div class="love-particle">🌺</div>
+        <div class="love-particle">💐</div>
+        <div class="love-particle">🎀</div>
     </div>
     <div class="background-elements">
         <div class="bg-element">🌸</div>
@@ -179,6 +237,20 @@
         <div class="bg-element">💝</div>
         <div class="bg-element">💞</div>
         <div class="bg-element">💟</div>
+        <div class="bg-element">😍</div>
+        <div class="bg-element">🥰</div>
+        <div class="bg-element">😘</div>
+        <div class="bg-element">💋</div>
+        <div class="bg-element">🌹</div>
+        <div class="bg-element">🌷</div>
+        <div class="bg-element">🌸</div>
+        <div class="bg-element">💐</div>
+        <div class="bg-element">🎁</div>
+        <div class="bg-element">💍</div>
+        <div class="bg-element">👑</div>
+        <div class="bg-element">🦄</div>
+        <div class="bg-element">🌈</div>
+        <div class="bg-element">✨</div>
     </div>
 
     <script>
@@ -288,6 +360,39 @@
         document.querySelectorAll('.scroll-section').forEach(section => {
             observer.observe(section);
         });
+
+        // Kiss popup functionality
+        let kissPopupShown = false;
+        const playlistSection = document.getElementById('playlist');
+        
+        const kissObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !kissPopupShown) {
+                    setTimeout(() => {
+                        showKissPopup();
+                        kissPopupShown = true;
+                    }, 1000); // Delay for dramatic effect
+                }
+            });
+        }, { threshold: 0.5 });
+
+        kissObserver.observe(playlistSection);
+
+        function showKissPopup() {
+            const popup = document.getElementById('kiss-popup');
+            popup.style.display = 'flex';
+            createConfetti();
+            createSparkle(window.innerWidth / 2, window.innerHeight / 2);
+        }
+
+        function closeKissPopup() {
+            const popup = document.getElementById('kiss-popup');
+            popup.style.animation = 'fadeOut 0.3s ease-out';
+            setTimeout(() => {
+                popup.style.display = 'none';
+                popup.style.animation = '';
+            }, 300);
+        }
     </script>
 </body>
 </html>
